@@ -1,0 +1,26 @@
+.the-switcher {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 18px;
+  border: 1px solid var(--cl-main-text);;
+  border-radius: 20px;
+
+  span {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: var(--cl-main-text);
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+  }
+
+  &.is-active {
+    span {
+      transform: translateX(22px);
+    }
+  }
+}

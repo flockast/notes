@@ -1,0 +1,46 @@
+.todo-app {
+  display: grid;
+  gap: 30px;
+  transition: .2s ease-in-out;
+
+  @screen md {
+    grid-template-columns: 280px 1fr;
+  }
+
+  @screen xl {
+    grid-template-columns: 380px 1fr;
+  }
+
+  &__create {
+
+  }
+
+  &__add-form {
+    @screen md {
+      position: sticky;
+      top: 75px;
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__header {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    @screen lg {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  &__search {
+
+  }
+
+  &__filter {
+
+  }
+}

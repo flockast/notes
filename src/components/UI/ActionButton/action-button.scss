@@ -1,0 +1,12 @@
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+
+  svg {
+    stroke: var(--cl-main-text);
+    transition: .2s ease-in-out;
+  }
+}

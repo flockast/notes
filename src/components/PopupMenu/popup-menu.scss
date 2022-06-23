@@ -1,0 +1,40 @@
+.popup-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, .5);
+
+  &__window {
+    width: 300px;
+    height: 100%;
+    margin-left: auto;
+    padding-top: 60px;
+    background: #111116;
+  }
+
+  &__nav {
+
+  }
+
+  &__list {
+    li {
+      a {
+        display: block;
+        padding: 15px;
+        color: #ffffff;
+
+        &:hover {
+          background: rgba(255, 255, 255, .05);
+        }
+
+        &.router-link-active {
+          background: rgba(255, 255, 255, .7);
+          color: #000000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.the-button {
+  border-radius: 10px;
+  padding: 12px 20px;
+  background-image: linear-gradient(to bottom right, #fca5a5, #c4b5fd, #22d3ee);
+  color: var(--cl-button-text);
+  transition: .2s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}

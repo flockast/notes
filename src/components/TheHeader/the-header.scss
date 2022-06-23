@@ -1,0 +1,49 @@
+.the-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 16px 0;
+  background: var(--cl-header-bg);
+  transition: .2s ease-in-out;
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: auto;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: .5em;
+    font-weight: 500;
+
+    @screen md {
+      font-size: 20px;
+    }
+  }
+  
+  &__switcher {
+    margin-right: 20px;
+  }
+
+  &__menu-button {
+    position: relative;
+    z-index: 11;
+    display: block;
+    outline: none;
+
+    svg {
+      path {
+        fill: var(--cl-main-text);
+        transition: .2s ease-in-out;
+      }
+    }
+
+    &.is-active {
+      svg path {
+        fill: #ffffff;
+      }
+    }
+  }
+}

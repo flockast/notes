@@ -1,0 +1,14 @@
+.inter-box {
+  position: relative;
+  border: 1px solid var(--cl-border);
+  border-radius: 10px;
+  padding: 30px 15px;
+
+  &__title {
+    position: absolute;
+    top: -15px;
+    font-size: 18px;
+    padding: 0 5px;
+    background: var(--cl-main-bg);
+  }
+}

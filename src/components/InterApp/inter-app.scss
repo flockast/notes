@@ -1,0 +1,52 @@
+.inter-app {
+  display: grid;
+  gap: 30px;
+
+  @screen md {
+    grid-template-columns: 280px 1fr;
+  }
+
+  @screen xl {
+    grid-template-columns: 380px 1fr;
+  }
+
+  &__content {
+    display: grid;
+    gap: 60px;
+  }
+}
+
+.inter-app-sidebar {
+  background: var(--cl-box-bg);
+  border-radius: 10px;
+  padding: 15px;
+
+  @screen md {
+    position: sticky;
+    top: 75px;
+  }
+
+  &__list {
+    display: grid;
+    gap: 15px;
+
+    li {
+      opacity: .5;
+
+      &.is-active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.inter-app-typo {
+  &__row {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__key {
+    margin-right: 15px;
+  }
+}

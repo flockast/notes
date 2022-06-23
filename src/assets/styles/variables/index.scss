@@ -1,0 +1,19 @@
+:root {
+  --cl-main-bg: #ffffff;
+  --cl-main-text: #202124;
+  --cl-header-bg: whitesmoke;
+  --cl-footer-bg: whitesmoke;
+  --cl-border: rgba(0, 0, 0, .5);
+  --cl-button-text: #ffffff;
+  --cl-box-bg: whitesmoke;
+}
+
+.app[data-theme="dark"] {
+  --cl-main-bg: #1d1e26;
+  --cl-main-text: #ffffff;
+  --cl-header-bg: #15161c;
+  --cl-footer-bg: #15161c;
+  --cl-border: rgba(255, 255, 255, .5);
+  --cl-button-text: #000000;
+  --cl-box-bg: #363849;
+}
