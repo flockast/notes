@@ -45,7 +45,7 @@ const handleUpdateSwitch = (newValue: boolean) => {
           class="the-header__logo"
           :to="{name: 'home'}"
         >
-          Logotype
+          Testcaseapp
         </RouterLink>
         <div class="the-header__switcher">
           <TheSwitcher

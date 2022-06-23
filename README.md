@@ -1,4 +1,4 @@
-# Notes (Todo App) with vue 3
+# Test case app with vue 3
 
 [Open demo](https://testcaseapp.vercel.app)
 
