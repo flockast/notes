@@ -53,7 +53,7 @@ const stopEdit = () => {
 
 const handleInput = (e: Event) => {
   const target = e.target as HTMLTextAreaElement
-  newTitle.value = target.innerText
+  newTitle.value = target.value
 }
 
 const handleClickOnEdit = () => {
@@ -71,10 +71,6 @@ const handleEnter = () => {
 const handleEsc = () => {
   stopEdit()
 }
-
-const handleShiftEnter = () => {
-  newTitle.value += '\n'
-}
 </script>
 
 <template>
@@ -88,18 +84,16 @@ const handleShiftEnter = () => {
         @update:model-value="handleClickOnItem"
       />
     </div>
-    <div
+    <input
       ref="input"
       class="todo-item__content"
-      :contenteditable="editable"
+      :value="todo.title"
       @input="handleInput"
       @blur="handleBlur"
       @keyup.prevent.enter.exact="handleEnter"
-      @keyup.prevent.shift.enter.exact="handleShiftEnter"
       @keyup.prevent.esc="handleEsc"
-    >
-      {{ todo.title }}
-    </div>
+      :readonly="!editable"
+    />
     <div
       @click.stop
       class="todo-item__actions"
